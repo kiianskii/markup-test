@@ -13,6 +13,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   font-family: Roboto, sans-serif;
+  color: #000;
+  line-height: normal;
+  height: 1195px;
 }
 .container {
   max-width: 1440px;
@@ -66,7 +69,6 @@ body {
   color: #3d8eda;
   font-size: 13px;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.39px;
   padding: 6px 12px 7px 12px;
 
@@ -78,15 +80,33 @@ body {
 }
 
 .social-info {
-  color: #000;
   font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
-  line-height: normal;
 }
 
 .social-info-num {
   font-weight: 700;
+}
+
+.btn-container {
+  margin: 18px auto 23px;
+  display: flex;
+  justify-content: end;
+  width: 836px;
+  gap: 16px;
+}
+
+.squares-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.square-icon {
+  fill: #3d8eda;
+}
+
+.list-icon {
+  fill: #c8c7c7;
 }
 
 .gallery-list {
@@ -113,9 +133,87 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
     div {
       display: flex;
       gap: 18px;
+      font-size: 14px;
+      p {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
     }
   }
+}
+
+.stat-icon {
+  fill: black;
+}
+
+.load-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #929292;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: -0.33px;
+  width: 111px;
+  height: 28px;
+  border-radius: 14px;
+  border: 1px solid #929292;
+  margin: 33px auto 61px;
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 8px;
+  width: 836px;
+  margin: 0 auto;
+}
+
+.card-item {
+  width: 203px;
+  height: 341px;
+  flex-shrink: 0;
+  background: white;
+}
+
+.card-item-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    p {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  }
+  h3 {
+    font-size: 16px;
+  }
+}
+
+.card-item-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 12px 25px;
+}
+
+.card-upload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 0 12px 18px 12px;
 }
