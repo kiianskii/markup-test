@@ -8,6 +8,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,7 +46,29 @@
               <span class="social-info-num">112</span> following
             </p>
           </li>
-          <li class="header-info-item">Date</li>
+          <li class="header-info-item">
+            <span class="header-date">Date</span>
+            <label class="datepicker-container">
+              <input
+                class="datepicker"
+                type="text"
+                id="datepickerfrom"
+                placeholder="from"
+              />
+              <span class="datepicker-icon"></span>
+              <span class="datepicker-plus"></span>
+            </label>
+            <label class="datepicker-container">
+              <input
+                class="datepicker"
+                type="text"
+                id="datepickerto"
+                placeholder="to"
+              />
+              <span class="datepicker-icon"></span>
+              <span class="datepicker-plus"></span>
+            </label>
+          </li>
         </ul>
       </div>
     </header>
@@ -493,7 +520,7 @@
           </ul>
         </li>
       </ul>
-      <ul id="card-container" style="display: none">
+      <ul class="card-container" id="card-container" style="display: none">
         <li class="card-item">
           <img
             src="./images/card images/card_img_1.jpg"
@@ -881,6 +908,16 @@
       </ul>
       <button class="load-more-btn">LOAD MORE</button>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+
+    <script>
+      var picker = new Pikaday({
+        field: document.getElementById("datepickerfrom"),
+      });
+      var picker2 = new Pikaday({
+        field: document.getElementById("datepickerto"),
+      });
+    </script>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

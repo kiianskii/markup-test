@@ -11,3 +11,5 @@ document.getElementById("showTableBtn").addEventListener("click", function () {
   document.querySelector("#showCardsBtn .square-icon").style.fill = "#c8c7c7";
   document.querySelector("#showTableBtn .list-icon").style.fill = "#3d8eda";
 });
+
+var mycal = document.getElementById("datepicker");
